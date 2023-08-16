@@ -1,6 +1,6 @@
-import { Link }  from 'react-router-dom'
-import '../../styles/Header.scss'
-import logo from '../../images/logo.png'
+import { Link }  from 'react-router-dom';
+import '../../styles/Header.scss';
+import logo from '../../images/logo.png';
 
 function Header(){
     return (
