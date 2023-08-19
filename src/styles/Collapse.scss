@@ -1,0 +1,69 @@
+.collapse {
+    width: 1000px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: #ff6060;
+    color: white;
+    margin-bottom: 10px;
+
+
+
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+
+    &__svg {
+        fill: white;
+        font-size: 32px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.rotated {
+        transform: rotate(-180deg); 
+        transition: transform 0.5s ease;
+        }
+    }
+
+    &__content {
+        visibility: hidden;
+        overflow: hidden;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease, visibility 0s 0.5s;
+        color: black;
+        background: #f6f6f6;
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        position: relative;
+
+
+        &.visible {
+            max-height: 1000px; /* Utilisez une valeur suffisamment grande */
+            transform: scaleY(1);
+            transition: max-height 0.5s ease, transform 0.5s ease;
+
+        }
+    }
+}
+
+.collapse.active .collapse__content {
+    visibility: visible;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+  }

@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import Home from './pages/Home/';
 import About from './pages/About/';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LogementPage from './pages/LogementPage';
 
 
 const root = createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/logement/:id" element={<LogementPage />}/>
       </Routes>
 
     </Router>
