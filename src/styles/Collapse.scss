@@ -1,12 +1,10 @@
 .collapse {
-    width: 1000px;
-    height: 52px;
+    width: 80.89%;
     border-radius: 5px;
     background-color: #ff6060;
     color: white;
-    margin-bottom: 10px;
-
-
+    margin-bottom: 30px;
+    position: relative;
 
 
     &__header{
@@ -22,48 +20,53 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
+        margin: 10px 0 10px 20px;
     }
 
 
     &__svg {
         fill: white;
         font-size: 32px;
+        margin-right: 20px;
 
         &:hover {
             cursor: pointer;
         }
 
         &.rotated {
-        transform: rotate(-180deg); 
-        transition: transform 0.5s ease;
+            transform: rotate(-180deg); 
+            transition: transform 0.4s ease;
         }
+
+        &.norotated {
+            transform: rotate(0); 
+            transition: transform 0.4s ease;
+        }
+
     }
 
     &__content {
-        visibility: hidden;
         overflow: hidden;
-        transform: translateY(-100%);
-        transition: transform 0.5s ease, visibility 0s 0.5s;
-        color: black;
+        color: #ff6060;
         background: #f6f6f6;
         width: 100%;
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 400;
-        position: relative;
+        display: block; /* Toujours visible, mais caché par max-height */
+        max-height: 0;
+        transition: max-height 0.4s ;
 
-
+    
         &.visible {
-            max-height: 1000px; /* Utilisez une valeur suffisamment grande */
+            max-height: 250px; /* Utilisez une valeur suffisamment grande */
+            transition: max-height 0.4s ;
             transform: scaleY(1);
-            transition: max-height 0.5s ease, transform 0.5s ease;
-
         }
     }
-}
+    
 
-.collapse.active .collapse__content {
-    visibility: visible;
-    transform: translateY(0);
-    transition: transform 0.5s ease;
-  }
+
+    }
+
+

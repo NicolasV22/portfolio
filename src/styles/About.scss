@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headercontent{
+    max-width: 1240px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divlandscape{
+    width: 100%;
+    border-radius: 25px;
+    background: black;
+    height: 223px;
+    margin-bottom: 38px;
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        opacity: 0.8;
+    }
+}
+
+.collapses{
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collapse__p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
