@@ -1,6 +1,6 @@
 import logementsjson from '../../logements.json';
 import '../../styles/Card.scss';
-import { NavLink } from 'react-router-dom'; // Utilise NavLink
+import { NavLink } from 'react-router-dom'; 
 
 
 function Card() {

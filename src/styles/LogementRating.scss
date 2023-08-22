@@ -1,0 +1,22 @@
+.logement__rating{
+    width: 63.23%;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__star{
+        font-size: 25px;
+
+        &--pink{
+            fill: #FF6060;
+        }
+
+        &--gray{
+            fill:#E3E3E3;
+        }
+    }
+}
+
+
+

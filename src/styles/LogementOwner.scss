@@ -1,0 +1,33 @@
+.logement__owner{
+    width: 63.23%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    &__name{
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        color: #FF6060;
+    }
+    
+    &__picturecontainer{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__picture{
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
