@@ -4,7 +4,7 @@
     flex-direction: column;
 }
 
-.headercontent{
+.logementheadercontent{
     max-width: 1440px;
     width: 86.1%;
     padding: 0 100px;
@@ -39,12 +39,19 @@
 }
 
 .logement__collapses{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 
-    &__collapse{
+    &__desc{
         width: 47%;
     }
+}
+
+.logement__collapses__desc .collapse{
+    width: 100%;
+}
+
+.listeequipements{
+    list-style-type: none;
 }

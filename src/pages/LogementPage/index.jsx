@@ -17,7 +17,7 @@ function LogementPage(){
 
     return(
         <div className='logementpage'>
-            <div className='headercontent'>
+            <div className='logementheadercontent'>
                 <Header/>
                 <Slideshow/>
                 <div className='logement'>
@@ -31,12 +31,20 @@ function LogementPage(){
                     </div>
                 </div>
                 <div className='logement__collapses'>
-                    <Collapse className ='logement__collapses__collapse' title='Description'>
-                        <p>{logement.description}</p>
-                    </Collapse>
-                    <Collapse className='logement__collapses__collapse' title='Équipements'>
-                        <p>{logement.equipments}</p>
-                    </Collapse>
+                    <div className='logement__collapses__desc'>
+                        <Collapse title='Description'>
+                            <p>{logement.description}</p>
+                        </Collapse>
+                    </div>
+                    <div className='logement__collapses__desc'>
+                        <Collapse title='Équipements'>
+                        <ul className='listeequipements'>
+                            {logement.equipments.map((equipment, index) => (
+                            <li key={index}>{equipment}</li>
+                            ))}
+                        </ul>
+                        </Collapse>
+                    </div>
                 </div>
                 
             </div>
