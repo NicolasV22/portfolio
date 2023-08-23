@@ -6,7 +6,7 @@
 }
 
 
-.headercontent{
+.headercontenterror{
     max-width: 1240px;
     width: 86.1%;
     padding: 0 100px;
@@ -25,6 +25,7 @@
         margin: 0;
         margin-top: -60px;
         margin-bottom: -60px;
+        font-weight: 700;
     }
 
     &__h3{
@@ -33,6 +34,7 @@
         font-size: 36px;
         font-style: normal;
         margin: 0;
+        font-weight: 500;
     }
 
     &__link{
@@ -43,4 +45,40 @@
         text-decoration-line: underline;
         margin-bottom: 139px;
     }
+}
+
+@media screen and (max-width: 768px){
+
+
+    
+    .headercontenterror{
+        max-width: 768px;
+        padding: 0 20px;
+        gap: 60px;
+
+    
+    
+        &__h2{
+            font-size: 96px;
+            margin-bottom: 15px;
+            margin-top: 0;
+
+
+        }
+    
+        &__h3{
+            
+            font-size: 18px;
+            text-align: center;
+            width: 68%;
+            margin-bottom: 20px;
+        }
+    
+        &__link{
+
+            font-size: 14px;
+
+        }
+    }
+
 }

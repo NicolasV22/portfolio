@@ -8,7 +8,7 @@ import '../../styles/About.scss'
 function About() {
     return (
         <div className='about'>
-            <div className='headercontent'>
+            <div className='headercontentabout'>
                 <Header/>
                 <div className='divlandscape'>
                     <img className='divlandscape__img'src={landimg}/>

@@ -8,7 +8,7 @@ body{
     flex-direction: column;
 }
 
-.headercontent{
+.headercontentabout{
     max-width: 1240px;
     padding: 0 100px;
     display: flex;
@@ -28,6 +28,8 @@ body{
         height: 100%;
         border-radius: 25px;
         opacity: 0.8;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
@@ -43,3 +45,29 @@ body{
     margin-right: 25px;
 }
 
+@media screen and (max-width: 768px){
+
+    
+    .headercontentabout{
+        max-width: 768px;
+        padding: 0 20px;
+    }
+    
+    .divlandscape{
+        border-radius: 10px;
+
+    
+        &__img{
+            border-radius: 10px;
+        }
+    }
+    
+    .collapses{
+        width: 100%;
+    }
+
+    .collapse{
+        width: 100%;
+    }
+    
+}

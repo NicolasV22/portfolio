@@ -6,7 +6,6 @@
 
 .logementheadercontent{
     max-width: 1440px;
-    width: 86.1%;
     padding: 0 100px;
 
 }
@@ -42,6 +41,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 24px;
 
     &__desc{
         width: 47%;
@@ -54,4 +54,79 @@
 
 .listeequipements{
     list-style-type: none;
+}
+
+.slideshow{
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .logementheadercontent{
+        padding: 0 20px;
+        max-width: 728px;
+        width: calc(100% - 40px);
+    }
+    
+    
+    .logement{
+        width: 100%;
+        height: 139px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    
+        &__titleloctags{
+            width: 100%;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        &__ownerrating{
+            width: 100%;
+            height: 33px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+    
+    
+    
+        }
+    
+    }
+    
+    .logement__collapses{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 24px;
+        height: 80%;
+        
+        &__desc{
+            width: 100%;
+        }
+    
+    }
+    
+    .logement__collapses__desc .collapse{
+        width: 100%;
+    }
+    
+    .listeequipements{
+        list-style-type: none;
+    }
+    
+    .slideshow{
+        margin-bottom: 30px;
+
+    }
+
+    .logementpage .footer{
+        margin-top: 5px;
+    }
 }

@@ -31,3 +31,36 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .logement__owner{
+        width: 30%;
+        height: 33px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    
+        &__name{
+            font-size: 12px;
+        }
+        
+        &__picturecontainer{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            &__picture{
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    
+}

@@ -12,6 +12,7 @@ function Home() {
           <Header/>
           <div className='homeimgback'>
             <img src={homeimg} alt='photographie de côte marine forestière' className='homeimg'/>
+            <h1>Chez vous, partout et ailleurs</h1>
           </div>
           <Card/>
         </div>

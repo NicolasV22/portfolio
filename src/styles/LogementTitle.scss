@@ -21,3 +21,20 @@
     margin: 0;
     }
 }
+
+@media screen and (max-width: 768px){
+
+    .logement__title{
+        height: 70px;
+        flex-direction: column;
+    
+    
+        &__name{
+            font-size: 18px;
+        }
+    
+        &__location{
+        font-size: 14px;
+        }
+    }
+}

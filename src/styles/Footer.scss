@@ -25,3 +25,14 @@
         margin: 0;
     }
 }
+
+@media screen and (max-width: 768px){
+    .footer{
+        margin-top: 27px;
+        
+        &__p{
+            font-size: 12px;
+        }
+    }
+    
+}

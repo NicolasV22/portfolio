@@ -18,5 +18,16 @@
     }
 }
 
+@media screen and (max-width: 768px){
 
+    .logement__rating{
+        width: 30%;
+        height: 18px;
+
+    
+        &__star{
+            font-size: 17px;
+        }
+    }
+}
 

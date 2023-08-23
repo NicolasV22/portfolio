@@ -1,6 +1,4 @@
 .cards{
-    margin-left: 100px;
-    margin-right: 100px;
     width: 92%;
     border-radius: 25px;
     background: #F6F6F6;
@@ -17,13 +15,15 @@
     position: relative;
     border-radius: 10px;
 
-    .card__img{
+    &__img{
         width: 100%;
         height: 100%;
         border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
     }
 
-    .card__title{
+    &__title{
         color: #FFF;
     font-family: Montserrat;
     font-size: 18px;
@@ -37,3 +37,20 @@
     margin: 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .cards{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .card{
+        height: 255px;
+    }
+  }

@@ -40,4 +40,32 @@ $pink: #FF6060;
     }
 }
 
+@media (max-width: 768px) {
+
+    .header{
+        height: 46.9px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 27px;
+        margin-top: 20px;
+        
+        &__logo{
+            height: 47px;
+            width: 145px;
+    
+        }
+    
+        &__navbar{
+            height: 17px;
+            width: 45%;
+
+    
+            &__link{
+                font-size: 12px;
+
+            }
+        }
+    }
+}
 
