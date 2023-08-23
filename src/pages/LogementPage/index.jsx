@@ -1,6 +1,7 @@
+import React, { useEffect } from 'react';
 import logementsjson from '../../logements.json';
 import Header from '../../components/Header'
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Slideshow from '../../components/Slideshow'
 import '../../styles/LogementPage.scss'
 import LogementTitle from '../../components/LogementTitle';
@@ -14,6 +15,18 @@ import Footer from '../../components/Footer';
 function LogementPage(){
     const {id}= useParams();
     const logement = logementsjson.find(item => item.id === id);
+    const navigate = useNavigate();
+
+
+    useEffect(() => {
+        if (!logement) {
+            navigate('/erreur'); 
+        }
+    }, [logement, navigate]);
+
+    if (!logement) {
+        return null; 
+    }
 
     return(
         <div className='logementpage'>
