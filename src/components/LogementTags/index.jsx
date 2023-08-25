@@ -1,12 +1,9 @@
-import logementsjson from '../../logements.json';
-import { useParams } from 'react-router-dom';
 import '../../styles/LogementTags.scss';
 
 
 
-function LogementTags() {
-    const {id}= useParams();
-    const logement = logementsjson.find(item => item.id === id);
+function LogementTags({logement}) {
+
 
 return(
 <div className='tags'>

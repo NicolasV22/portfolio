@@ -31,16 +31,16 @@ function LogementPage(){
     return(
         <div className='logementpage'>
             <div className='logementheadercontent'>
-                <Header/>
-                <Slideshow/>
+                <Header logement={logement}/>
+                <Slideshow logement={logement}/>
                 <div className='logement'>
                     <div className='logement__titleloctags'>
-                        <LogementTitle/>
-                        <LogementTags/>
+                        <LogementTitle logement={logement}/>
+                        <LogementTags logement={logement}/>
                     </div>
                     <div className='logement__ownerrating'>
-                        <LogementOwner/>
-                        <LogementRating/>
+                        <LogementOwner logement={logement}/>
+                        <LogementRating logement={logement}/>
                     </div>
                 </div>
                 <div className='logement__collapses'>

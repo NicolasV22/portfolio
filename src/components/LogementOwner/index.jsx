@@ -1,12 +1,7 @@
 import '../../styles/LogementOwner.scss';
-import logementsjson from '../../logements.json';
-import { useParams } from 'react-router-dom';
 
 
-
-function LogementOwner() {
-    const {id}= useParams();
-    const logement = logementsjson.find(item => item.id === id);
+function LogementOwner({logement}) {
 
     return(
         <div className='logement__owner'>

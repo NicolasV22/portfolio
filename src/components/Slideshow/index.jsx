@@ -1,5 +1,4 @@
-import logementsjson from '../../logements.json';
-import { useParams } from 'react-router-dom';
+
 import React, { useState } from 'react';
 import '../../styles/Slideshow.scss';
 
@@ -8,9 +7,7 @@ import '../../styles/Slideshow.scss';
 
 
 
-    function Slideshow() {
-        const {id}= useParams();
-        const logement = logementsjson.find(item => item.id === id);
+    function Slideshow({logement}) {
 
 
         const [currentSlide, setCurrentSlide] = useState(0);

@@ -1,12 +1,9 @@
 import '../../styles/LogementRating.scss';
-import logementsjson from '../../logements.json';
-import { useParams } from 'react-router-dom';
 
 
 
-function LogementRating() {
-    const {id}= useParams();
-    const logement = logementsjson.find(item => item.id === id);
+
+function LogementRating({logement}) {
 
     const rating = parseInt(logement.rating);
     const grayrating = 5 - rating;

@@ -1,12 +1,9 @@
 import '../../styles/LogementTitle.scss';
-import logementsjson from '../../logements.json';
-import { useParams } from 'react-router-dom';
 
 
 
-function LogementTitle() {
-    const {id}= useParams();
-    const logement = logementsjson.find(item => item.id === id);
+
+function LogementTitle({logement}) {
 
     return(
 
