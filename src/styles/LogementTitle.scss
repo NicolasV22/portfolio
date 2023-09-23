@@ -1,10 +1,11 @@
 .logement__title{
     height: 77px;
     flex-direction: column;
+    margin-bottom: 20px;
 
 
     &__name{
-        color: #FF6060;
+        color: #313094;
         font-family: Montserrat;
         font-size: 36px;
         font-style: normal;
@@ -13,7 +14,7 @@
     }
 
     &__location{
-        color: #FF6060;
+        color: #313094;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;

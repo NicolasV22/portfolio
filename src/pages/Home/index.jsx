@@ -2,7 +2,9 @@ import homeimg from '../../images/homeimg.jpg';
 import '../../styles/Home.scss';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Card from '../../components/Card';
+import Skills from '../../components/Skills';
+import Aboutme from '../../components/Aboutme';
+import TypingAnimation from '../../components/TypingAnimation';
 
 function Home() {
   return(
@@ -11,10 +13,11 @@ function Home() {
         <div className='home__padding'>
           <Header/>
           <div className='homeimgback'>
-            <img src={homeimg} alt='photographie de côte marine forestière' className='homeimg'/>
-            <h1>Chez vous, partout et ailleurs</h1>
+            <img src={homeimg} alt='Nicolas Verez, développeur fullstack' className='homeimg'/>
+            <TypingAnimation/>
           </div>
-          <Card/>
+          <Aboutme/>
+          <Skills/>
         </div>
       </div>
       <Footer/>

@@ -9,7 +9,7 @@ function Header(){
             <img src={logo} alt="logo du site kasa" className='header__logo'/>
             <nav className='header__navbar'>
                 <Link to="/" className={`header__navbar__link ${location.pathname === '/' ? 'active' : ''}`}>Accueil</Link>
-                <Link to="/about" className={`header__navbar__link ${location.pathname === '/about' ? 'active' : ''}`}>A Propos</Link>
+                <Link to="/PortfolioPage" className={`header__navbar__link ${location.pathname === '/PortfolioPage' ? 'active' : ''}`}>Portfolio</Link>
             </nav>
         </header>
     )

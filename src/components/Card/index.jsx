@@ -8,7 +8,7 @@ function Card() {
         <div className='cards'>
             {logementsjson.map((item) => (
                 <div key={item.id} className="card">
-                    <NavLink to={`/logement/${item.id}`}>
+                    <NavLink to={`/Portfolio/${item.id}`}>
                     <img src={item.cover} alt={item.title} className='card__img'/>
                     <h2 className='card__title'>{item.title}</h2>
                     </NavLink>

@@ -1,10 +1,11 @@
 .collapse {
     width: 80.89%;
     border-radius: 5px;
-    background-color: #ff6060;
+    background-color: #313094;
     color: white;
     margin-bottom: 30px;
     position: relative;
+    margin-top: 30px;
 
 
     &__header{
@@ -47,7 +48,7 @@
 
     &__content {
         overflow: hidden;
-        color: #ff6060;
+        color: #313094;
         background: #f6f6f6;
         width: 100%;
         font-family: Montserrat;

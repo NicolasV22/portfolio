@@ -9,7 +9,7 @@ function LogementTitle({logement}) {
 
         <div className='logement__title'>
             <h2 className='logement__title__name'>{logement.title}</h2>
-            <h3 className='logement__title__location'>{logement.location}</h3>
+            <a className='logement__title__location' href={logement.location} target='blank' >Repo Github / Lien du site</a>
         </div>
     );
 };

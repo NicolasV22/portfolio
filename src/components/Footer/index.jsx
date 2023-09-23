@@ -1,16 +1,25 @@
-import logofooter from '../../images/logofooter.png';
+import logofooter from '../../images/logo.png';
 import '../../styles/Footer.scss'
 
 
 
 
 function Footer(){
-    return(
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0, 
+            behavior: 'smooth', 
+        });
+    };
+    
+    return (
         <footer className="footer">
             <img src={logofooter} className="footer__logo" alt='logo kasa du footer'/>
-            <p className="footer__p">© 2020 Kasa. All rights reserved</p>
+            <p id="scrollToTop" className="footer__p" onClick={scrollToTop}>
+            Retournez au début en cliquant ici
+            </p>
         </footer>
-    )
-}
-
-export default Footer;
+      );
+    }
+    
+    export default Footer;

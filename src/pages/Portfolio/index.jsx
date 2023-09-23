@@ -3,16 +3,14 @@ import logementsjson from '../../logements.json';
 import Header from '../../components/Header'
 import { useParams, useNavigate } from 'react-router-dom';
 import Slideshow from '../../components/Slideshow'
-import '../../styles/LogementPage.scss'
+import '../../styles/Portfolio.scss'
 import LogementTitle from '../../components/LogementTitle';
 import LogementTags from '../../components/LogementTags';
-import LogementRating from '../../components/LogementRating';
-import LogementOwner from '../../components/LogementOwner';
 import Collapse from '../../components/Collapse';
 import Footer from '../../components/Footer';
 
 
-function LogementPage(){
+function Portfolio(){
     const {id}= useParams();
     const logement = logementsjson.find(item => item.id === id);
     const navigate = useNavigate();
@@ -38,19 +36,16 @@ function LogementPage(){
                         <LogementTitle logement={logement}/>
                         <LogementTags logement={logement}/>
                     </div>
-                    <div className='logement__ownerrating'>
-                        <LogementOwner logement={logement}/>
-                        <LogementRating logement={logement}/>
-                    </div>
+
                 </div>
                 <div className='logement__collapses'>
                     <div className='logement__collapses__desc'>
-                        <Collapse title='Description'>
+                        <Collapse title='Description du projet'>
                             <p>{logement.description}</p>
                         </Collapse>
                     </div>
                     <div className='logement__collapses__desc'>
-                        <Collapse title='Équipements'>
+                        <Collapse title='Compétences acquises'>
                         <ul className='listeequipements'>
                             {logement.equipments.map((equipment, index) => (
                             <li key={index}>{equipment}</li>
@@ -70,4 +65,4 @@ function LogementPage(){
     
 }
 
-export default LogementPage;
+export default Portfolio;

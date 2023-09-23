@@ -1,4 +1,4 @@
-$pink: #FF6060;
+$blue: #313094;
 
 .header{
     display: flex;
@@ -8,11 +8,11 @@ $pink: #FF6060;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
     
     &__logo{
         height: 68px;
-        color: $pink;
-        width: 210px;
+        width: 140px;
 
     }
 
@@ -24,7 +24,7 @@ $pink: #FF6060;
         align-items: center;
 
         &__link{
-            color: $pink;
+            color: $blue;
             font-family: Montserrat;
             font-size: 24px;
             font-style: normal;
@@ -33,7 +33,7 @@ $pink: #FF6060;
 
             &:hover{
                 text-decoration: underline;
-                text-decoration-color: $pink;
+                text-decoration-color: $blue;
                 cursor: pointer;
             }
 
