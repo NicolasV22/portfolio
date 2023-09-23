@@ -2,7 +2,7 @@
   "name": "portfolio-nicolas-verez",
   "version": "0.1.0",
   "private": true,
-  "hompage": "https://nicolasv22.github.io/portfolio/",
+  "homepage": "https://nicolasv22.github.io/portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
