@@ -1,14 +1,14 @@
-import '../../styles/LogementTags.scss';
+import '../../styles/ProjectTags.scss';
 
 
 
-function LogementTags({logement}) {
+function ProjectTags({project}) {
 
 
 return(
 <div className='tags'>
 {
-    logement.tags.map((tag, index) => (
+    project.tags.map((tag, index) => (
         <div className='tags__tag' key={index}>
             <p className='tags__tag__p'>{tag}</p>
         </div>
@@ -18,4 +18,4 @@ return(
 </div>
 )};
 
-export default LogementTags;
+export default ProjectTags;

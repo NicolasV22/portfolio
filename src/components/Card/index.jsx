@@ -1,4 +1,4 @@
-import logementsjson from '../../logements.json';
+import projectsjson from '../../projects.json';
 import '../../styles/Card.scss';
 import { NavLink } from 'react-router-dom'; 
 
@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 function Card() {
     return(
         <div className='cards'>
-            {logementsjson.map((item) => (
+            {projectsjson.map((item) => (
                 <div key={item.id} className="card">
                     <NavLink to={`/Portfolio/${item.id}`}>
                     <img src={item.cover} alt={item.title} className='card__img'/>

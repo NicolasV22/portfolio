@@ -1,13 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Routerkasa from './components/Routerkasa';
+import PortfolioRouter from './components/PortfolioRouter';
 
 
 const root = createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Routerkasa/>
+    <PortfolioRouter/>
   </React.StrictMode>
 );
 
